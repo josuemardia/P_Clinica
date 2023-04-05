@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2? familia,Poppins:wght@700&display-swap");
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container{
+	widht:85%;
+	padding: 0px 2% 0px 2%;
+	max-width: 1050px;
+	margin: 0px auto;	
+}
+
+
+
+			/*EMPIEZA LA NAVEGACION*/
+.header{
+	background:#42AAE0;
+    color: white;
+	padding: 1.5rem 0;
+	transition:all 1.5s ease;
+	/* hacer el menu fijo */
+	position: fixed;
+	left: 0;
+	top: 0;
+	/* ocupamos todo el ancho */
+	right: 0;
+}
+header:hover{
+	background:rgba(41, 64, 130, 0.9);  /*31488B;  /*152B6C;*/
+}
+/*Poniendole color a los enlaces del menu de navegacion*/
+.header a {
+  color: white;
+  text-decoration: none;
+  font-size:0.85rem;
+}
+
+/* hacemos que la lista se comporte como un menu*/
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  /* lo alineamos al centro */
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+/* logo */
+.logo {
+  letter-spacing: 3px;
+  font-size: 1.3em;
+}
+
+
+/* todos los "ul" que esten dentro de "navigation" */
+.navigation ul {
+  margin: 0; /* no tenga ningun margen el ul*/
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  /* uno al lado del otro */
+  display: inline-block;
+  
+}
+
+/* los enlaces dentro del menu */
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 35px;
+ 
+}
+
+.navigation ul li a:hover {
+    background: #0B1A4D;
+}
+
+/* AQUI TERMINA TODO LA NAVEGACION*/
+
+
+/*----------------- EMPIEZA EL MAIN -----------------*/
+
+.main{
+	margin-top: 5.2rem;
+	widht:100%;
+}
+/*
+.main section {
+	margin:0px;
+	
+} */
+
+/*------- SECTION FIRST IMAGEN----------*/
+.main .section-first{
+	background-color: rgba(69,221,212,0.22);
+	background-image: url("../Imagenes/imagen-odonto.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	widht:100%;
+	height:520px;
+	right:0px;
+	left:0px;
+} 
+
+/*-------- SECTION SECOND CONCEPTO --------*/
+.main .section-second{
+	background-image: url("../Imagenes/imagen-equipo-dental.webp");
+	background-repeat:no-repeat;
+	background-size:cover;
+	widht:100%;
+	height:560px;
+	display:flex;
+	align-items:center;
+}
+
+.main .section-second >div{
+	color:#ffffff;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+
+.container .concepto{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+	/*background-color:blue; */
+	margin-right:50%;
+	
+}
+.section-second p{
+	color:#fff;
+	font-size:1rem;
+}
+h1{
+	font-size:4rem;
+	color:#fff;
+}
+
+/*--------- SECTION TERCERA SINTOMAS---------*/
+.main .section-tercera{
+	widht:100%;
+	height:470px;
+	background-color:#ffffff;
+	display:flex;
+	
+}
+.main .section-tercera .sintomas{
+	display:flex;
+	widht:100%;
+	height:100%;
+	justify-content:evenly;
+	align-items:center;
+}
+
+
+.sintomas-text{
+	widht:25%;
+	height:50%;
+	margin:0 15% 0 0;
+	text-align:justify;
+}
+
+.sintomas-text>h2{
+	font-size:2.2rem;
+	
+}
+
+/* Imagen dentro de div*/
+
+.sintomas-imagen{
+	widht:60%;
+	height:60%;
+	border:10px solid #0C9BE4;
+	transition: all 1s ease;
+	
+	/*overflow:hidden;*/
+}
+
+.imagen-sintomas{
+	widht:100%;
+	height:100%;
+	object-fit:contain;
+}
+
+/* ---------------	SECTION CUARTA - FASES -------------*/
+
+.main .section-cuarta{
+	background-color:#0C9BE4;
+	widht:100%;
+	height:450px;
+}
+
+.section-cuarta .fases{
+	
+	display:flex;
+	flex-direction:column;
+	widht:100%;
+	height:100%;
+	
+}
+.fases-text{
+	widht:80%;
+	margin:auto;
+	height:20%;
+	display:flex;
+	align-items:center;
+}
+.fases-text h2{
+	
+	font-size:3.2rem;
+	color:#fff;
+	padding-top:5.5%;
+}
+
+.fases-imagen{
+	display:flex;
+	align-items:center;
+	justify-content:around;
+	overflow:hidden;
+	height:80%;
+	
+}
+
+.fac{
+	width:30%;
+	height:80%;
+	display:flex;
+	flex-direction:column;
+	background-color:#ffffff;
+	padding:0px 2% 0px 2%;
+	margin:3%;
+	justify-content:center;
+	align-items:center;
+	border-radius:20%;
+	transition:all 1s ease;
+}
+.fac>h3{
+	height:30%;
+	color:#42AAE0;
+	padding-top:10%;
+	font-size:2.5rem;
+	top:0px;
+}
+.fac>p{
+	height:60%;
+	text-align:justify;
+	font-style:normal;
+	font-size:0.8rem;
+	
+}
+.uno:hover{
+	background-image: url("../Imagenes/presentacion3.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#fff;
+	background-position:center;
+	border-radius:20%;
+}
+
+.dos:hover{
+	background-image: url("../Imagenes/presentacion1.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#fff;
+	background-position:center;
+	border-radius:20%;
+}
+
+.tres:hover{
+	background-image: url("../Imagenes/presentacion2.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#fff;
+	background-position:center;
+	border-radius:20%;
+}
+
+.uno:hover h3{
+	color:#ffff;
+}
+.dos:hover h3{
+	color:#ffff;
+}
+.tres:hover h3{
+	color:#ffff;
+}
+/*
+.fac>h3{
+	font-size:2.5rem;
+	top:0px;
+}
+.fac>p{
+	
+	text-align:justify;
+	font-style:normal;
+	font-size:0.8rem;
+}/*
+
+
+/*---------------- SECTION QUINTA - CONCEPTO 2 ----------*/
+
+.section-quinta{
+	widht:100%;
+	height:450px;
+}
+
+.concepto-dos{
+	display:flex;
+	height:100%;
+	flex-direction:column;
+	align-items:center;
+	text-align:justify;
+	
+}
+.concepto-dos h2{
+	font-size:3.2rem;
+	padding-top:5%;
+	height:40%;
+}
+.concepto-dos p{
+	height:55%;
+	align-items:center;
+}
+
+
+/*---------------- SECTION SEXTA - TRATAMIENTO----------*/
+
+.main .section-sexta{
+	
+	widht:100%;
+	height:450px;
+	display:flex;
+	background-color:#E9FBF9;
+}
+
+.tratamiento{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow:hidden;
+	/*flex-wrap:wrap;*/
+}
+
+.tratamiento-imagen{
+	
+	widht:60%;
+	height:60%;
+	background-color:#0C9BE4;
+	border: 10px solid #0C9BE4;
+	transition: all 1s ease;
+	
+}
+.imagen-tratamiento{	
+	widht:100%;
+	height:100%;
+	object-fit:contain;
+	
+}
+
+.tratamiento-text{
+	widht:40%;
+	height:45%;
+	display:flex;
+	flex-direction:column;
+	margin-right:15%;
+}
+.tratamiento-text h2{
+	font-size:2.5rem;
+}
+.tratamiento-text p{
+	text-align:justify;
+	
+}
+
+
+/*EMPIEZA EL FOOTER*/
+
+.footer{
+	background-color:#030C2C;
+	widht:100%;
+	height:270px;
+	display:flex;
+	align-items:center;
+}
+
+.foot-first{
+	display:flex;
+	justify-content:around;
+	align-items:center;
+}
+
+.foot{
+	margin:0;
+	padding: 0px 3% 0px 3%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	/*border-left:2px solid #fff;*/
+}
+.foot>h3{
+	color:#fff;
+	font-size:1rem;
+	margin-bottom:35px;
+	
+}
+.foot>p{
+	color:#fff;
+	font-size:0.7rem;
+	font-style:normal;
+	text-align:justify;
+}
+
+.preguntas-frecuentes, .contactanos{
+	
+	border-right:1px solid #ffffff;
+}
+
+.preguntas-frecuentes{
+	border-left:1px solid #ffffff;
+}
+
+
+
+

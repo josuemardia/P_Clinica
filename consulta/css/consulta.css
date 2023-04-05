@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2? familia,Poppins:wght@700&display-swap");
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Poppins', sans-serif;
+}
+.container{
+	widht:85%;
+	padding: 0px 2% 0px 2%;
+	max-width: 1050px;
+	margin: 0px auto;	
+}
+
+
+
+			/*EMPIEZA LA NAVEGACION*/
+.header{
+	background:#42AAE0;
+    color: white;
+	padding: 1.5rem 0;
+	transition:all 1.5s ease;
+	/* hacer el menu fijo */
+	position: fixed;
+	left: 0;
+	top: 0;
+	/* ocupamos todo el ancho */
+	right: 0;
+}
+header:hover{
+	background-color:rgba(41, 64, 130, 0.9); /*31488B;  /*152B6C;*/
+}
+/*Poniendole color a los enlaces del menu de navegacion*/
+.header a {
+  color: white;
+  text-decoration: none;
+  font-size:0.85rem;
+}
+
+/* hacemos que la lista se comporte como un menu*/
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  /* lo alineamos al centro */
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+/* logo */
+.logo {
+  letter-spacing: 3px;
+  font-size: 1.3em;
+}
+
+
+/* todos los "ul" que esten dentro de "navigation" */
+.navigation ul {
+  margin: 0; /* no tenga ningun margen el ul*/
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  /* uno al lado del otro */
+  display: inline-block;
+  
+}
+
+/* los enlaces dentro del menu */
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 35px;
+ 
+}
+
+.navigation ul li a:hover {
+    background: #0B1A4D;
+}
+
+/*----------------- EMPIEZA EL MAIN -----------------*/
+
+.main{
+	margin-top: 5.2rem;
+	widht:100%;
+}
+
+/*----------------- SECTION FIRST - INFO DE LA CLINICA */
+.section-first{
+	widht:100%;
+	height:450px;
+	display:flex;
+	align-items:center;
+}
+
+.clinica{
+	widht:100%;
+	display:flex;
+	justify-content:between;
+	align-items:center;
+}
+
+.clinica-text{
+	widht:30%;
+	padding-left:10%;
+	height:50%;
+	/*padding-left:20%;*/
+	
+}
+.clinica-imagen{
+	widht:20%;
+	height:350px;
+	padding-right:20%;
+	overflow:hidden;
+	/*background-color:#42AAE0;*/
+	transition:all 1s ease;
+}
+
+.imagen-clinica{
+	
+	widht:100%;
+	height:100%;
+	object-fit:contain;
+	/*border: 2px solid #42AAE0;*/
+}
+
+.clinica-text h2{
+	font-size:2.5rem;
+}
+
+.clinica-text p{
+	font-size:1rem;
+	text-align:justify;
+}
+
+
+/*SECTION SECOND - TITULO DEL ODONTOLOGO*/
+
+.section-second{
+	background-image:url("../Imagenes/equipo-dental2.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	widht:100%;
+	height:535px;
+	transition:all 1s ease;
+	/*display:flex;
+	align-items:center;*/
+}
+
+.titulo-odonto{
+	widht:100%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	color:#fff;
+	
+}
+.titulo-odonto h1{
+	font-size:3.5rem;
+	text-align:left;
+	
+}
+
+
+/*SECTION TERCERA - INFORMACION PERSONAL DEL ODONTOLOGO*/
+
+.section-tres{
+	wider:100%;
+	height:450px;
+	display:flex;
+	align-items:center;
+}
+
+.personal{
+	display:flex;
+	align-items:center;
+	justify:evenly;
+	widht:100%;
+	height:100%;
+}
+
+.personal-text{
+	widht:25%;
+	padding-right:15%;
+	height:60%;
+	margin:auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	/*background-color:blue;*/
+}
+.personal-imagen{
+	widht:50%;
+	padding:2%;
+	height:50%;
+	margin:auto;
+	background-color:#42AAE0;
+	border-radius:50%;
+	transition:all 1s ease;
+}
+.personal-imagen p{
+	display:none;
+}
+.personal-imagen:hover{
+	background-color:#294082;
+	
+}
+
+.imagen-personal{
+	widht:100%;
+	height:100%;
+	border-radius:50%;
+}
+.personal-text h2{
+	font-size:2.5rem;
+	color:#294082;
+	
+}
+.personal-text p{
+	text-align:justify;
+}
+
+/* ---------------- SECRION CUARTA - ESRUDIOS ACADEMICOS*/
+
+.section-cuarta{
+	
+	widht:100%;
+	height:370px;
+	background-color:#E9FBF9;
+}
+.estudios-academicos{
+	widht:100%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:between;	
+}
+.estudios-h2{
+	font-size:2.5rem;
+	height:50%;
+	margin-right:10%;
+}
+.estudios-ul{
+	widht:50%;
+	height:50%;
+	margin-left:10%;
+}
+
+/*EMPIEZA EL FOOTER*/
+
+.footer{
+	background-color:#030C2C;
+	widht:100%;
+	height:270px;
+	display:flex;
+	align-items:center;
+}
+
+.foot-first{
+	display:flex;
+	justify-content:around;
+	align-items:center;
+}
+
+.foot{
+	margin:0;
+	padding: 0px 3% 0px 3%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	/*border-left:2px solid #fff;*/
+}
+.foot>h3{
+	color:#fff;
+	font-size:1rem;
+	margin-bottom:35px;
+	
+}
+.foot>p{
+	color:#fff;
+	font-size:0.7rem;
+	font-style:normal;
+	text-align:justify;
+}
+
+.preguntas-frecuentes, .contactanos{
+	
+	border-right:1px solid #ffffff;
+}
+
+.preguntas-frecuentes{
+	border-left:1px solid #ffffff;
+}
+
